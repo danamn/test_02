@@ -1,0 +1,202 @@
+/* CSS resets */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* End resets */
+
+body {
+    font-family: 'Josefin Sans',Helvetica,Arial,sans-serif;
+    font-size: 19px;
+    line-height: 28px;
+    color: #000;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+h1, h2 {
+    font-family: 'Libre Baskerville',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+/** Header */
+
+header {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+header .top-row {
+    display: none;
+}
+.header-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header h2 {
+    font-size: 19px;
+}
+header .mobile-header{
+    width: 97%;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/** Page **/
+
+.content-wrapper {
+    overflow: auto;
+}
+.page-header {
+    display: table;
+    margin:0;
+    width: 100%;
+    height: 180px;
+    background-color: #bb6868;
+    border: none;
+}
+.page-header-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.page-header-text h1{
+    margin: 0 50px;
+    font-size: 19px;
+    letter-spacing: 4px;
+}
+
+.page-content{
+    background-color: #6CB35D;
+    color: #fff;
+    padding: 25px;
+
+}
+.section {
+    padding-top: 20px;
+    text-align: center;
+    overflow: auto;
+}
+.section h2 {
+    padding-bottom: 10px;
+}
+.section h4 {
+    font-style: italic;
+}
+.section .section-description {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.section:first-child:after {
+    content: '';
+    position: relative;
+    display: table;
+    height: 2px;
+    background-color: #ffffff;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section img {
+    display: none;
+}
+
+
+@media(min-width: 768px){
+
+    header h2 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    header {
+        height: 160px;
+    }
+    header .mobile-header {
+        display: none;
+    }
+    header .top-row {
+        display: block;
+        height: 70px;
+        padding: 30px 15px 10px;
+    }
+    header .top-row h5{
+        text-transform: uppercase;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+    header .top-row h5.date,
+    header .top-row h5.location {
+        float: left;
+    }
+    header .top-row h5.hashtag {
+        float: right;
+        padding-right: 45px;
+    }
+    header .header-title {
+        text-align: center;
+        padding-top:10px;
+        height:80px;
+    }
+
+    .content-wrapper {
+        height: 900px;
+    }
+    .page-header {
+        height: 900px;
+        padding: 0;
+
+    }
+    .page-header-text h1{
+        font-size: 70px;
+        line-height: 110px;
+        margin: 0 100px;
+    }
+    .section{
+        padding: 100px 30px;
+    }
+    .section:first-child:after {
+        display: none;
+    }
+    .section .section-header {
+        padding: 60px;
+        
+    }
+    .section .section-header img {
+        display: block;
+        height: 100px;
+        margin: 10px auto; 
+    }
+    .section .section-header h2 {
+        font-size: 42px;
+        line-height: 42px;
+        padding: 30px 0;
+    }
+    .section .section-description{
+        padding: 0;
+        border-left: 4px solid #fff;
+    }
+    .section .section-description p{
+        padding: 60px 130px;
+    }
+}
